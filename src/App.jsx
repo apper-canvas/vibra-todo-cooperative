@@ -131,10 +131,7 @@ function App() {
   if (!isInitialized) {
     return <div className={`loading ${darkMode ? 'dark' : ''}`}></div>;
   }
-}
-
-export default App;
-
+  
   return (
     <AuthContext.Provider value={authMethods}>
       <Routes>
@@ -154,3 +151,6 @@ export default App;
       <ToastContainer position="bottom-right" autoClose={3000} theme={darkMode ? "dark" : "light"} />
     </AuthContext.Provider>
   );
+}
+
+export default App;
